@@ -13,9 +13,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let firstViewController  = FirstViewController()
+        let secondViewController = SecondViewController()
+        let thirdViewController  = ThirdViewController()
+        
+        //UITabBarControllerにセットする前にタイトルセットしないと表示されない
+        firstViewController.title = "ふぁーすと"
+        secondViewController.title = "せかんど"
+        thirdViewController.title = "さーど"
+        
+        let navImage:UIImage! = UIImage(named: "thumb_3")
+        [UINavigationBar .appearance().setBackgroundImage(navImage, forBarMetrics: .Default)]
+        let nav1 = UINavigationController(rootViewController: firstViewController)
+        let navControllers = [nav1, secondViewController, thirdViewController]
+        
+        //let nav2 = UINavigationController(rootViewController: secondViewController)
+        //let nav3 = UINavigationController(rootViewController: thirdViewController)
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = navControllers
+        
+        self.window?.rootViewController = tabBarController
+        self.window?.backgroundColor = UIColor.whiteColor()
+        self.window?.makeKeyAndVisible()
         return true
     }
 
