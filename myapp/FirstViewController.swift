@@ -20,7 +20,7 @@ class FirstViewController: UIViewController {
         button1.setTitle("ボタンだ", forState: UIControlState.Normal)
         button1.backgroundColor = UIColor.blueColor()
         button1.sizeToFit()
-        button1.center = CGPointMake(100, 150)
+        button1.center = CGPointMake(100, 350)
         button1.addTarget(self, action: "nextView", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(button1)
         

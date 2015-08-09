@@ -27,15 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         secondViewController.title = "せかんど"
         thirdViewController.title = "さーど"
         
-        let navImage:UIImage! = UIImage(named: "thumb_3")
-        [UINavigationBar .appearance().setBackgroundImage(navImage, forBarMetrics: .Default)]
-        let nav1 = UINavigationController(rootViewController: firstViewController)
-        let navControllers = [nav1, secondViewController, thirdViewController]
-        
-        //let nav2 = UINavigationController(rootViewController: secondViewController)
-        //let nav3 = UINavigationController(rootViewController: thirdViewController)
-        
+        let navigationController = CustomNavigationController(rootViewController: firstViewController)
         let tabBarController = UITabBarController()
+        let navControllers = [navigationController, secondViewController, thirdViewController]
+        
+        navigationController.setNavigationBarHidden(true, animated: true)
         tabBarController.viewControllers = navControllers
         
         self.window?.rootViewController = tabBarController

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A1273A71B771413001A10BA /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1273A61B771413001A10BA /* CustomNavigationController.swift */; };
 		6A1EFABF1B6394710079D5AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1EFABE1B6394710079D5AE /* AppDelegate.swift */; };
 		6A1EFAC11B6394710079D5AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1EFAC01B6394710079D5AE /* ViewController.swift */; };
 		6A1EFAC61B6394710079D5AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A1EFAC51B6394710079D5AE /* Images.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A1273A61B771413001A10BA /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		6A1EFAB91B6394710079D5AE /* myapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A1EFABD1B6394710079D5AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A1EFABE1B6394710079D5AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				6A1EFAE01B639EE50079D5AE /* SecondViewController.swift */,
 				6A1EFAE21B63A7F50079D5AE /* ThirdViewController.swift */,
 				6A1EFAE41B63B1DE0079D5AE /* NextViewController.swift */,
+				6A1273A61B771413001A10BA /* CustomNavigationController.swift */,
 			);
 			path = myapp;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				6A1EFAE31B63A7F50079D5AE /* ThirdViewController.swift in Sources */,
 				6A1EFAC11B6394710079D5AE /* ViewController.swift in Sources */,
 				6A1EFABF1B6394710079D5AE /* AppDelegate.swift in Sources */,
+				6A1273A71B771413001A10BA /* CustomNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +417,7 @@
 				6A1EFADA1B6394710079D5AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A1EFADB1B6394710079D5AE /* Build configuration list for PBXNativeTarget "myappTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				6A1EFADD1B6394710079D5AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
